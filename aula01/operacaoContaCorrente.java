@@ -8,6 +8,14 @@ class operacaoContaCorrente
     static double saldo = 100.80;
     static String nomeCliente = "Usuário";
 
+    /*
+    %d 	representa números inteiros
+    %f 	representa números floats
+    %2f 	representa números doubles
+    %b 	representa valores booleanos
+    %c 	representa valores char
+    */
+
    public static void main(String args[]) {  
         Scanner menu = new Scanner (System.in);
 
@@ -71,6 +79,9 @@ class operacaoContaCorrente
    public static double imprimir () {
     System.out.println(nomeCliente + System.lineSeparator());
     System.out.println(saldo + System.lineSeparator());
+    System.out.println("saldo");
+    System.out.println("%s saldo");
+
     System.out.println(contaCorrente + System.lineSeparator());
     System.out.println(agencia + System.lineSeparator());
     return saldo;  
